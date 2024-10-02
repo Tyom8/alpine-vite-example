@@ -1,0 +1,59 @@
+<!-- <div className='flex flex-col justify-between w-[349px] gap-[67.7px] p-[20px] items-center rounded-[20px] border border-whiteBorder backdrop-blur backdrop-blur-3xl z-50'>
+  <div className={`w-full flex flex-row justify-between items-center`}>
+    <div className={`w-[24px] h-[24px]`} />
+    <p className='text-white font-archivo text-[20px] leading-[30px] font-medium'>
+      Connect wallet
+    </p>
+    <div
+      className={`flex w-[24px] h-[24px] justify-center items-center cursor-pointer`}
+      onClick={() => {
+        onCloseModal();
+      }}
+    > -->
+
+<header class="bg-gray-800 text-white p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <img src="/public/vite.svg" alt="logo">
+      <span class="text-white font-archivo text-[20px] leading-[30px] font-bold">Vite JS</span>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="space-x-4 hidden md:block">
+      <a href="/" class="hover:text-gray-300">Home</a>
+      <a href="/about" class="hover:text-gray-300">About</a>
+      <a href="/services" class="hover:text-gray-300">Services</a>
+      <a href="/contact" class="hover:text-gray-300">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button class="block md:hidden" @click="toggleMobileMenu">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16m-7 6h7"
+        />
+      </svg>
+    </button>
+    <button class="block" @click="toggleMobileMenu">
+      <x-alert class="alert alert-success"/>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <nav x-show="mobileMenuOpen" class="md:hidden bg-gray-700 p-4">
+    <a href="/" class="block py-2 hover:bg-gray-600">Home</a>
+    <a href="/about" class="block py-2 hover:bg-gray-600">About</a>
+    <a href="/services" class="block py-2 hover:bg-gray-600">Services</a>
+    <a href="/contact" class="block py-2 hover:bg-gray-600">Contact</a>
+  </nav>
+</header>

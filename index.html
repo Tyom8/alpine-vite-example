@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+    <div id="app">
+          <div x-data="headerComponent()" x-html="$el.innerHTML = fetch('/src/layouts/header.html').then(res => res.text())"></div>
+    <script type="module" src="/src/app.js"></script>
+  </body>
+</html>
+
+
+<!-- <div className='flex flex-col justify-between w-[349px] gap-[67.7px] p-[20px] items-center rounded-[20px] border border-whiteBorder backdrop-blur backdrop-blur-3xl z-50'>
+  <div className={`w-full flex flex-row justify-between items-center`}>
+    <div className={`w-[24px] h-[24px]`} />
+    <p className='text-white font-archivo text-[20px] leading-[30px] font-medium'>
+      Connect wallet
+    </p>
+    <div
+      className={`flex w-[24px] h-[24px] justify-center items-center cursor-pointer`}
+      onClick={() => {
+        onCloseModal();
+      }}
+    >
+      <img
+        src={CloseIcon}
+        alt='arrow left'
+        className='text-white w-[14px] h-[14px] items-center'
+      />
+    </div>
+  </div>
+  <img className='w-[100px] h-[50px]' src={Logo} alt='Logo' />
+  <div className='w-full flex flex-col items-center gap-[20px]'> -->
+          <!-- <div x-data="loveCounter" >
+        <h1 class="text-purple-600">Show some heart</h1>
+        <div x-text="hearts()" >
+        </div>
+        <div>
+            <button @click="love" >Show 💟</button>
+        </div>
+      </div>
+    </div> -->
